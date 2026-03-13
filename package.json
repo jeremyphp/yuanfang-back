@@ -17,7 +17,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "engines": {
     "node": ">=18.0.0"
   },
