@@ -1,0 +1,8 @@
+import { PrismaClient } from '@prisma/client';
+
+// Prisma 7.x configuration for SQLite
+const prisma = new PrismaClient({
+  // SQLite is the default for file: URLs, no adapter needed
+});
+
+export default prisma;

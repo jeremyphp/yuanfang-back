@@ -1,0 +1,6 @@
+import { defineConfig } from '@prisma/client'
+
+export default defineConfig({
+  adapter: 'sqlite',
+  url: process.env.DATABASE_URL,
+})

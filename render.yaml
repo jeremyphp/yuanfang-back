@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: yuanfang-back
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DATABASE_URL
+        value: "file:./prod.db"
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_URL
+        value: https://your-frontend-domain.vercel.app
+    disk:
+      name: data
+      mountPath: /opt/render/project/src
+      sizeGB: 1
