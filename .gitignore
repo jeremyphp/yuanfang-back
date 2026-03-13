@@ -5,6 +5,8 @@ dist/
 *.db
 *.db-shm
 *.db-wal
+*.db.backup-*
 .DS_Store
 *.log
 coverage/
+dev.db.backup-*
